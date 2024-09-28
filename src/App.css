@@ -1,38 +1,132 @@
-.App {
+@import url('https://fonts.googleapis.com/icon?family=Material+Icons');
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+#root {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.container {
+  min-width: 100%;
+}
+
+.icon {
+  text-align: end;
+}
+
+.material-icons {
+  font-size: 40px;
+  color: #6d6b6b;
+
+  &:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+  }
+}
+
+.cards {
+  margin-top: 10px;
+}
+
+.card__view {
+  width: 95%;
+  display:flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.card__container {
+  margin-top: 20px;
+  width: 30%;
+  background-color: #f6f6f6;
+  box-shadow: 0 16px 16px rgba(0, 0, 0, .5);
+}
+
+.title__card,
+.title__item {
+  font-size: 24px;
+  font-weight: 400;
+  text-transform: uppercase;
+  margin-top: 20px;
+  color: #2e2e2e;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.color__card,
+.color__item {
+  margin-top: 10px;
+  color: #2e2e2e;
+  text-align: center;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.img__card {
+  display: block;
+  width: 80%;
+  height: 55%;
+  margin: 0 auto;
+}
+
+.price__container {
+  width: 85%;
+  display:flex;
+  justify-content: space-between;
+  margin: 0 auto;
+}
+
+.price__card,
+.price__item {
+  color: red;
+  font-size: 20px;
+}
+
+.card__btn,
+.item__btn {
+  margin-right: 15px;
+  background-color: #f6f6f6;
+  color: red;
+  text-transform: uppercase;
+  padding: 5px 10px;
+  border: 1px solid red;
+  border-radius: 13px;
+
+  &:hover {
+    background-color: red;
+    color: #f6f6f6;
+    cursor: pointer;
+    transition: background-color .7s;
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
+.lists {
+  margin-top: 20px;
+  background-color: #ffffff;
+}
+
+.list__view {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.list__item {
+  display:flex;
+  justify-content: space-between;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  background-color: #f6f6f6;
 }
 
-.App-link {
-  color: #61dafb;
+.list__item:not(:last-child) {
+  margin-bottom: 5px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.img__item {
+  width: 15%;
+}
+
+.item__btn {
+  padding: 5px 10px;
+  border-radius: 15px;
 }
